@@ -1,0 +1,48 @@
+.light{
+    width: fit-content;
+    height: fit-content;
+    background-color: #a59075;
+    border: 2px black solid;
+    border-radius: 20px;
+    padding: 12px;
+}
+
+.c {
+    width: 96px;
+    height: 96px;
+    margin-bottom: 8px;
+    border-radius: 50%;
+    border: 1px solid grey;
+}
+
+.lighton {
+    background-color: var(--color);
+    filter: drop-shadow(0 0 0.5rem var(--color))
+}
+
+.light-off {
+    background-color: lightgray;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.el {
+    width: 100%;
+    height: fit-content;
+    padding: 4px;
+    align-self: center;
+    border-radius: 8px;
+    background-color: lightgray;
+    border: 2px solid black;
+}
+
+.margin {
+    margin-bottom: 4px;
+}
+
+span{
+    text-align: center;
+}
