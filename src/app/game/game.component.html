@@ -1,0 +1,14 @@
+<div class="main">
+    <div class="IA">
+        <img [src]="images[pickIA]"/>
+    </div>
+    <h1>{{msg}}</h1>
+    <div class="Player">
+        <img [src]="images[pick]"/>
+        <div class="input">
+            <button (click)="userPick(1)">Piedra</button>
+            <button (click)="userPick(2)">Papel</button>
+            <button (click)="userPick(3)">Tijera</button>
+        </div>
+    </div>
+</div>

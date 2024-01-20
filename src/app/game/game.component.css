@@ -1,0 +1,47 @@
+.main {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: beige;
+    padding: 1em 1em 1em 1em;
+}
+
+.IA{
+    background-color: lightcoral;
+    width: 300px;
+    height: 300px;
+}
+.Player{
+    background-color: lightseagreen;
+    width: 300px;
+    height: 300px;
+}
+
+h1{
+    text-align: center;
+}
+
+img {
+    width: 280px;
+    height: 250px;
+    align-items: center;
+}
+
+div :not(.input){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    width: 300px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+button {
+    width: 80px;
+}

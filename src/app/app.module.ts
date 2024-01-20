@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SemaforoComponent } from './semaforo/semaforo.component';
 import { ListaComponent } from './lista/lista.component';
+import { GameComponent } from './game/game.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SemaforoComponent,
-    ListaComponent
+    ListaComponent,
+    GameComponent
   ],
   imports: [
     BrowserModule,
