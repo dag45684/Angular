@@ -9,12 +9,12 @@
 .IA{
     background-color: lightcoral;
     width: 300px;
-    height: 300px;
+    height: 280px;
 }
 .Player{
     background-color: lightseagreen;
     width: 300px;
-    height: 300px;
+    height: 310px;
 }
 
 h1{
@@ -27,7 +27,7 @@ img {
     align-items: center;
 }
 
-div :not(.input){
+div :not(.input, .lives){
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,4 +44,16 @@ div :not(.input){
 
 button {
     width: 80px;
+}
+
+.lives{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.lives>img{
+    max-width: 20px;
+    max-height: 20px;
 }

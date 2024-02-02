@@ -1,14 +1,20 @@
 <div class="main">
     <div class="IA">
+        <div class="lives">
+            <img *ngFor="let _ of [].constructor(scoreIA)" [src]="images[3]"/>
+        </div>
         <img [src]="images[pickIA]"/>
     </div>
     <h1>{{msg}}</h1>
     <div class="Player">
+        <div class="lives">
+            <img *ngFor="let _ of [].constructor(scoreP1)" [src]="images[3]"/>
+        </div>
         <img [src]="images[pick]"/>
         <div class="input">
-            <button (click)="userPick(1)">Piedra</button>
-            <button (click)="userPick(2)">Papel</button>
-            <button (click)="userPick(3)">Tijera</button>
+            <button (click)="userPick(1)" *ngIf="playing">Piedra</button>
+            <button (click)="userPick(2)" *ngIf="playing">Papel</button>
+            <button (click)="userPick(3)" *ngIf="playing">Tijera</button>
         </div>
     </div>
 </div>
