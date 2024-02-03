@@ -14,8 +14,10 @@ export class GameComponent {
   scoreIA: number = 5;
   scoreP1: number = 5;
   playing: boolean = true;
+  imgpick: boolean = false;
 
   userPick(pick:number){
+    this.imgpick = true;
     this.pick = pick - 1;
     this.pickIA = Math.floor(Math.random() * 3);
     switch(this.pickIA){
@@ -38,4 +40,9 @@ export class GameComponent {
     this.msg = this.scoreIA == 0 ? "Player wins the game!" : "IA wins the game!";
     this.playing = false;
   }
+
+  // animation(){
+  //   (<HTMLElement> (document.getElementById('main'))).style.setProperty(
+  //     "background-image", `linear-gradient(120deg, #${Math.floor(Math.random()*16777215).toString(16)}, #${Math.floor(Math.random()*16777215).toString(16)})`);
+  // }
 }
